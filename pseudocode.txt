@@ -1,0 +1,47 @@
+do
+{
+  print Usage: ./caesar key
+}
+while (argc is greater than 1 or allDigits(argv[0]) is false)
+
+int key = argv[0] as an int
+get plaintext;
+ciphertext = plaintext
+print "ciphertext: ";
+    
+for i from 0 to length of plaintext
+{
+  if ciphertext[i] is an alphabetical character
+  {
+    int initialCase = checkCase(ciphertext[i])
+    ciphertext[i] = (ciphertext[i] + k) % 26;
+    int endCase = checkCase(newChar)
+    if the cases don't match
+    {
+      make cases match
+    }
+  }
+  print ciphertext[i];
+}
+print a new line
+
+boolean allDigits(string input)
+{
+  for i from 0 to length of input
+  {
+    if input[i] is not a digit
+    {
+      return false
+    }
+  }
+  return true
+}
+
+int checkCase(char letter)
+{
+  if lower
+  {
+    return 0
+  }
+  return 1
+}
