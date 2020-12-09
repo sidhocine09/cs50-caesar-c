@@ -45,3 +45,4 @@ int checkCase(char letter)
   }
   return 1
 }
+ 
